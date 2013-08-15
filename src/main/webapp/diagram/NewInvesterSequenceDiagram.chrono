@@ -1,0 +1,263 @@
+@prefix atxa-rse-eclipse: <http://www.architexa.com/rdf/rse-eclipse#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix atxa-jdt-wkspc: <http://www.architexa.com/rdf/jdt-wkspc#> .
+@prefix atxa-core: <http://www.architexa.com/rdf/core#> .
+@prefix atxa: <http://www.architexa.com/rdf/> .
+@prefix atxa-jdt: <http://www.architexa.com/rdf/jdt#> .
+
+<http://www.architexa.com/rdf/rse-eclipse#src_slmain_slwebapp_sldiagram_slNewInvesterSequenceDiagram.chrono> a atxa-core:chronoFile .
+
+atxa:DetailNode atxa-core:detailLevel "0" .
+
+<http://www.architexa.com/rdf/rse-eclipse#src_slmain_slwebapp_sldiagram_slNewInvesterSequenceDiagram.chrono> atxa-core:contains _:node1774b13t7x5954 .
+
+_:node1774b13t7x5954 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.controller$RegistrationController> ;
+	atxa-jdt:index "0" ;
+	atxa-core:instanceName "" ;
+	atxa-core:contains _:node1774b13t7x5959 .
+
+_:node1774b13t7x5959 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.controller$RegistrationController.submitForm(Investor,)> ;
+	atxa-jdt:index "0" ;
+	atxa-core:contains _:node1774b13t7x5960 .
+
+_:node1774b13t7x5960 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.service$InvesterService.addInvester(Investor,)> ;
+	atxa-jdt:index "0" .
+
+<http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.service$InvesterService.addInvester(Investor,)> atxa-core:link _:node1774b13t7x5961 .
+
+_:node1774b13t7x5962 a atxa-core:link ;
+	atxa-core:model atxa-jdt:calls ;
+	rdf:subject _:node1774b13t7x5960 ;
+	rdf:object _:node1774b13t7x5961 ;
+	atxa-core:name "addInvester(invester)" .
+
+_:node1774b13t7x5959 atxa-core:contains _:node1774b13t7x5963 .
+
+_:node1774b13t7x5963 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.mailutil$MailService.sendMail(String,String,String,String,)> ;
+	atxa-jdt:index "1" .
+
+<http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.mailutil$MailService.sendMail(String,String,String,String,)> atxa-core:link _:node1774b13t7x5964 .
+
+_:node1774b13t7x5965 a atxa-core:link ;
+	atxa-core:model atxa-jdt:calls ;
+	rdf:subject _:node1774b13t7x5963 ;
+	rdf:object _:node1774b13t7x5964 ;
+	atxa-core:name "sendMail(\"no-reply@yahoo.com\", getEmail(), subject, body)" .
+
+_:node1774b13t7x5954 atxa-core:contains _:node1774b13t7x5966 .
+
+_:node1774b13t7x5966 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.controller$RegistrationController.checkemailexist(String,)> ;
+	atxa-jdt:index "1" ;
+	atxa-core:contains _:node1774b13t7x5967 .
+
+_:node1774b13t7x5967 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.service$InvesterService.emailExist(String,)> ;
+	atxa-jdt:index "0" .
+
+<http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.service$InvesterService.emailExist(String,)> atxa-core:link _:node1774b13t7x5968 .
+
+_:node1774b13t7x5969 a atxa-core:link ;
+	atxa-core:model atxa-jdt:calls ;
+	rdf:subject _:node1774b13t7x5967 ;
+	rdf:object _:node1774b13t7x5968 ;
+	atxa-core:name "emailExist(email)" .
+
+_:node1774b13t7x5954 atxa-core:contains _:node1774b13t7x5970 .
+
+_:node1774b13t7x5970 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.controller$RegistrationController.changepassword(Investor,HttpServletRequest,)> ;
+	atxa-jdt:index "2" ;
+	atxa-core:contains _:node1774b13t7x5971 .
+
+_:node1774b13t7x5971 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.service$InvesterService.addInvester(Investor,)> ;
+	atxa-jdt:index "0" .
+
+<http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.service$InvesterService.addInvester(Investor,)> atxa-core:link _:node1774b13t7x5972 .
+
+_:node1774b13t7x5973 a atxa-core:link ;
+	atxa-core:model atxa-jdt:calls ;
+	rdf:subject _:node1774b13t7x5971 ;
+	rdf:object _:node1774b13t7x5972 ;
+	atxa-core:name "addInvester(oldInvestor)" .
+
+_:node1774b13t7x5954 atxa-core:contains _:node1774b13t7x5974 .
+
+_:node1774b13t7x5974 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.controller$RegistrationController.showForm(Investor,)> ;
+	atxa-jdt:index "3" ;
+	atxa-core:contains _:node1774b13t7x5975 .
+
+_:node1774b13t7x5975 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.entity$Investor.Investor()> ;
+	atxa-jdt:index "0" .
+
+<http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.entity$Investor.Investor()> atxa-core:link _:node1774b13t7x5976 .
+
+_:node1774b13t7x5977 a atxa-core:link ;
+	atxa-core:model atxa-jdt:calls ;
+	rdf:subject _:node1774b13t7x5975 ;
+	rdf:object _:node1774b13t7x5976 ;
+	atxa-core:name "Investor()" .
+
+_:node1774b13t7x5954 atxa-core:contains _:node1774b13t7x5978 .
+
+_:node1774b13t7x5978 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.controller$RegistrationController.getSecurePassword()> ;
+	atxa-jdt:index "4" .
+
+<http://www.architexa.com/rdf/rse-eclipse#src_slmain_slwebapp_sldiagram_slNewInvesterSequenceDiagram.chrono> atxa-core:contains _:node1774b13t7x5979 .
+
+_:node1774b13t7x5979 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.service$InvesterServiceImpl> ;
+	atxa-jdt:index "1" ;
+	atxa-core:instanceName "" ;
+	atxa-core:contains _:node1774b13t7x5980 .
+
+_:node1774b13t7x5980 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.service$InvesterServiceImpl.emailExist(String,)> ;
+	atxa-jdt:index "0" .
+
+_:node1774b13t7x5981 a atxa-core:link ;
+	atxa-core:model atxa-jdt:overrides ;
+	rdf:subject _:node1774b13t7x5980 ;
+	rdf:object _:node1774b13t7x5968 ;
+	atxa-core:name "overrides" .
+
+_:node1774b13t7x5979 atxa-core:contains _:node1774b13t7x5982 .
+
+_:node1774b13t7x5982 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.service$InvesterServiceImpl.userNameExist(String,)> ;
+	atxa-jdt:index "1" .
+
+_:node1774b13t7x5979 atxa-core:contains _:node1774b13t7x5983 .
+
+_:node1774b13t7x5983 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.service$InvesterServiceImpl.addInvester(Investor,)> ;
+	atxa-jdt:index "2" .
+
+_:node1774b13t7x5984 a atxa-core:link ;
+	atxa-core:model atxa-jdt:overrides ;
+	rdf:subject _:node1774b13t7x5983 ;
+	rdf:object _:node1774b13t7x5985 ;
+	atxa-core:name "overrides" .
+
+_:node1774b13t7x5986 a atxa-core:link ;
+	atxa-core:model atxa-jdt:overrides ;
+	rdf:subject _:node1774b13t7x5983 ;
+	rdf:object _:node1774b13t7x5987 ;
+	atxa-core:name "overrides" .
+
+<http://www.architexa.com/rdf/rse-eclipse#src_slmain_slwebapp_sldiagram_slNewInvesterSequenceDiagram.chrono> atxa-core:contains _:node1774b13t7x5988 .
+
+_:node1774b13t7x5988 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.mailutil$MailServiceImpl> ;
+	atxa-jdt:index "2" ;
+	atxa-core:instanceName "" ;
+	atxa-core:contains _:node1774b13t7x5989 .
+
+_:node1774b13t7x5989 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.mailutil$MailServiceImpl.sendMail(String,String,String,String,)> ;
+	atxa-jdt:index "0" .
+
+_:node1774b13t7x5990 a atxa-core:link ;
+	atxa-core:model atxa-jdt:overrides ;
+	rdf:subject _:node1774b13t7x5989 ;
+	rdf:object _:node1774b13t7x5964 ;
+	atxa-core:name "overrides" .
+
+<http://www.architexa.com/rdf/rse-eclipse#src_slmain_slwebapp_sldiagram_slNewInvesterSequenceDiagram.chrono> atxa-core:contains _:node1774b13t7x5955 .
+
+_:node1774b13t7x5955 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.mailutil$MailService> ;
+	atxa-jdt:index "3" ;
+	atxa-core:instanceName "mailService" ;
+	atxa-core:contains _:node1774b13t7x5964 .
+
+_:node1774b13t7x5964 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.mailutil$MailService.sendMail(String,String,String,String,)> ;
+	atxa-jdt:index "0" .
+
+_:node1774b13t7x5991 a atxa-core:link ;
+	atxa-core:model atxa-jdt:returns ;
+	rdf:subject _:node1774b13t7x5964 ;
+	rdf:object _:node1774b13t7x5963 ;
+	atxa-core:name "void" .
+
+<http://www.architexa.com/rdf/rse-eclipse#src_slmain_slwebapp_sldiagram_slNewInvesterSequenceDiagram.chrono> atxa-core:contains _:node1774b13t7x5992 .
+
+_:node1774b13t7x5992 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.entity$Investor> ;
+	atxa-jdt:index "4" ;
+	atxa-core:instanceName "" ;
+	atxa-core:contains _:node1774b13t7x5976 .
+
+_:node1774b13t7x5976 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.entity$Investor.Investor()> ;
+	atxa-jdt:index "0" .
+
+_:node1774b13t7x5993 a atxa-core:link ;
+	atxa-core:model atxa-jdt:returns ;
+	rdf:subject _:node1774b13t7x5976 ;
+	rdf:object _:node1774b13t7x5975 ;
+	atxa-core:name "Investor" .
+
+<http://www.architexa.com/rdf/rse-eclipse#src_slmain_slwebapp_sldiagram_slNewInvesterSequenceDiagram.chrono> atxa-core:contains _:node1774b13t7x5956 .
+
+_:node1774b13t7x5956 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.service$InvesterService> ;
+	atxa-jdt:index "5" ;
+	atxa-core:instanceName "investerService" ;
+	atxa-core:contains _:node1774b13t7x5961 .
+
+_:node1774b13t7x5961 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.service$InvesterService.addInvester(Investor,)> ;
+	atxa-jdt:index "0" .
+
+_:node1774b13t7x5994 a atxa-core:link ;
+	atxa-core:model atxa-jdt:returns ;
+	rdf:subject _:node1774b13t7x5961 ;
+	rdf:object _:node1774b13t7x5960 ;
+	atxa-core:name "Investor" .
+
+_:node1774b13t7x5956 atxa-core:contains _:node1774b13t7x5968 .
+
+_:node1774b13t7x5968 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.service$InvesterService.emailExist(String,)> ;
+	atxa-jdt:index "1" .
+
+_:node1774b13t7x5995 a atxa-core:link ;
+	atxa-core:model atxa-jdt:returns ;
+	rdf:subject _:node1774b13t7x5968 ;
+	rdf:object _:node1774b13t7x5967 ;
+	atxa-core:name "Long" .
+
+_:node1774b13t7x5956 atxa-core:contains _:node1774b13t7x5985 .
+
+_:node1774b13t7x5985 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.service$InvesterService.addInvester(Investor,)> ;
+	atxa-jdt:index "2" .
+
+_:node1774b13t7x5956 atxa-core:contains _:node1774b13t7x5987 .
+
+_:node1774b13t7x5987 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.service$InvesterService.addInvester(Investor,)> ;
+	atxa-jdt:index "3" .
+
+_:node1774b13t7x5956 atxa-core:contains _:node1774b13t7x5972 .
+
+_:node1774b13t7x5972 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.service$InvesterService.addInvester(Investor,)> ;
+	atxa-jdt:index "4" .
+
+_:node1774b13t7x5996 a atxa-core:link ;
+	atxa-core:model atxa-jdt:returns ;
+	rdf:subject _:node1774b13t7x5972 ;
+	rdf:object _:node1774b13t7x5971 ;
+	atxa-core:name "Investor" .
+

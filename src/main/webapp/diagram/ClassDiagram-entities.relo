@@ -1,0 +1,288 @@
+@prefix atxa-rse-eclipse: <http://www.architexa.com/rdf/rse-eclipse#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix atxa-jdt-wkspc: <http://www.architexa.com/rdf/jdt-wkspc#> .
+@prefix atxa-ann: <http://www.architexa.com/rdf/ann#> .
+@prefix atxa-core: <http://www.architexa.com/rdf/core#> .
+@prefix atxa: <http://www.architexa.com/rdf/> .
+
+<http://www.architexa.com/rdf/rse-eclipse#src_slmain_slwebapp_sldiagram_slClassDiagram-entities.relo> a atxa-core:reloFile .
+
+atxa:DetailNode atxa-core:detailLevel "0" .
+
+atxa-core:docRoot atxa-core:browseModel "com.architexa.diagrams.relo.jdt/com.architexa.diagrams.relo.jdt.browse.ClassStrucBrowseModel" ;
+	atxa-core:contains _:node1774b13t7x5818 .
+
+_:node1774b13t7x5818 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.entity> ;
+	atxa-core:posX "56" ;
+	atxa-core:posY "-79" .
+
+<http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.entity> atxa-core:contains <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.entity$Stock> , <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.entity$Investor> , <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.entity$InvesterStocksDetails> , <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.entity$StockYearDetail> .
+
+_:node1774b13t7x5818 atxa-core:contains _:node1774b13t7x5819 .
+
+_:node1774b13t7x5819 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.entity$Stock> ;
+	atxa-core:posX "366" ;
+	atxa-core:posY "-54" .
+
+<http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.entity$Stock> atxa-core:contains <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.entity$Stock.stockId> , <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.entity$Stock.stockSymbol> , <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.entity$Stock.companyName> , <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.entity$Stock.entryDate> , <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.entity$Stock.faceValue> .
+
+_:node1774b13t7x5819 atxa-core:contains _:node1774b13t7x5820 .
+
+_:node1774b13t7x5820 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.entity$Stock.companyName> ;
+	atxa-core:posX "367" ;
+	atxa-core:posY "-32" .
+
+_:node1774b13t7x5819 atxa-core:contains _:node1774b13t7x5821 .
+
+_:node1774b13t7x5821 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.entity$Stock.entryDate> ;
+	atxa-core:posX "367" ;
+	atxa-core:posY "-16" .
+
+_:node1774b13t7x5819 atxa-core:contains _:node1774b13t7x5822 .
+
+_:node1774b13t7x5822 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.entity$Stock.faceValue> ;
+	atxa-core:posX "367" ;
+	atxa-core:posY "0" .
+
+_:node1774b13t7x5819 atxa-core:contains _:node1774b13t7x5823 .
+
+_:node1774b13t7x5823 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.entity$Stock.stockId> ;
+	atxa-core:posX "367" ;
+	atxa-core:posY "16" .
+
+_:node1774b13t7x5819 atxa-core:contains _:node1774b13t7x5824 .
+
+_:node1774b13t7x5824 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.entity$Stock.stockSymbol> ;
+	atxa-core:posX "367" ;
+	atxa-core:posY "32" .
+
+_:node1774b13t7x5818 atxa-core:contains _:node1774b13t7x5825 .
+
+_:node1774b13t7x5825 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.entity$InvesterStocksDetails> ;
+	atxa-core:posX "349" ;
+	atxa-core:posY "269" .
+
+<http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.entity$InvesterStocksDetails> atxa-core:contains <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.entity$InvesterStocksDetails.investerStockDetailsId> , <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.entity$InvesterStocksDetails.stockId> , <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.entity$InvesterStocksDetails.investerId> , <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.entity$InvesterStocksDetails.quantity> , <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.entity$InvesterStocksDetails.purchasePrice> , <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.entity$InvesterStocksDetails.varient> , <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.entity$InvesterStocksDetails.purchasedate> , <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.entity$InvesterStocksDetails.isEmailAlertActivate> .
+
+_:node1774b13t7x5811 a atxa-core:link ;
+	atxa-core:model atxa-ann:namedRel ;
+	rdf:subject _:node1774b13t7x5825 ;
+	rdf:object _:node1774b13t7x5826 ;
+	atxa-core:width "2" ;
+	atxa-core:commentTxt "  " .
+
+_:node1774b13t7x5825 atxa-core:contains _:node1774b13t7x5827 .
+
+_:node1774b13t7x5827 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.entity$InvesterStocksDetails.investerId> ;
+	atxa-core:posX "350" ;
+	atxa-core:posY "291" .
+
+_:node1774b13t7x5825 atxa-core:contains _:node1774b13t7x5828 .
+
+_:node1774b13t7x5828 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.entity$InvesterStocksDetails.investerStockDetailsId> ;
+	atxa-core:posX "350" ;
+	atxa-core:posY "307" .
+
+_:node1774b13t7x5825 atxa-core:contains _:node1774b13t7x5829 .
+
+_:node1774b13t7x5829 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.entity$InvesterStocksDetails.isEmailAlertActivate> ;
+	atxa-core:posX "350" ;
+	atxa-core:posY "323" .
+
+_:node1774b13t7x5825 atxa-core:contains _:node1774b13t7x5830 .
+
+_:node1774b13t7x5830 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.entity$InvesterStocksDetails.purchasedate> ;
+	atxa-core:posX "350" ;
+	atxa-core:posY "339" .
+
+_:node1774b13t7x5825 atxa-core:contains _:node1774b13t7x5831 .
+
+_:node1774b13t7x5831 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.entity$InvesterStocksDetails.purchasePrice> ;
+	atxa-core:posX "350" ;
+	atxa-core:posY "355" .
+
+_:node1774b13t7x5825 atxa-core:contains _:node1774b13t7x5832 .
+
+_:node1774b13t7x5832 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.entity$InvesterStocksDetails.quantity> ;
+	atxa-core:posX "350" ;
+	atxa-core:posY "371" .
+
+_:node1774b13t7x5825 atxa-core:contains _:node1774b13t7x5833 .
+
+_:node1774b13t7x5833 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.entity$InvesterStocksDetails.stockId> ;
+	atxa-core:posX "350" ;
+	atxa-core:posY "387" .
+
+_:node1774b13t7x5825 atxa-core:contains _:node1774b13t7x5834 .
+
+_:node1774b13t7x5834 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.entity$InvesterStocksDetails.varient> ;
+	atxa-core:posX "350" ;
+	atxa-core:posY "403" .
+
+_:node1774b13t7x5818 atxa-core:contains _:node1774b13t7x5835 .
+
+_:node1774b13t7x5835 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.entity$StockYearDetail> ;
+	atxa-core:posX "366" ;
+	atxa-core:posY "89" .
+
+<http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.entity$StockYearDetail> atxa-core:contains <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.entity$StockYearDetail.stockPriceId> , <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.entity$StockYearDetail.stockId> , <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.entity$StockYearDetail.stockEntryDate> , <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.entity$StockYearDetail.price> .
+
+_:node1774b13t7x5835 atxa-core:contains _:node1774b13t7x5836 .
+
+_:node1774b13t7x5836 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.entity$StockYearDetail.price> ;
+	atxa-core:posX "367" ;
+	atxa-core:posY "111" .
+
+_:node1774b13t7x5835 atxa-core:contains _:node1774b13t7x5837 .
+
+_:node1774b13t7x5837 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.entity$StockYearDetail.stockEntryDate> ;
+	atxa-core:posX "367" ;
+	atxa-core:posY "127" .
+
+_:node1774b13t7x5835 atxa-core:contains _:node1774b13t7x5838 .
+
+_:node1774b13t7x5838 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.entity$StockYearDetail.stockId> ;
+	atxa-core:posX "367" ;
+	atxa-core:posY "143" .
+
+_:node1774b13t7x5835 atxa-core:contains _:node1774b13t7x5839 .
+
+_:node1774b13t7x5839 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.entity$StockYearDetail.stockPriceId> ;
+	atxa-core:posX "367" ;
+	atxa-core:posY "159" .
+
+_:node1774b13t7x5818 atxa-core:contains _:node1774b13t7x5840 .
+
+_:node1774b13t7x5840 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.entity$Investor> ;
+	atxa-core:posX "62" ;
+	atxa-core:posY "-35" .
+
+<http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.entity$Investor> atxa-core:contains <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.entity$Investor.userId> , <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.entity$Investor.username> , <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.entity$Investor.firstName> , <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.entity$Investor.lastName> , <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.entity$Investor.password> , <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.entity$Investor.mobile> , <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.entity$Investor.email> , <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.entity$Investor.addressLineOne> , <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.entity$Investor.addressLineTwo> , <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.entity$Investor.city> , <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.entity$Investor.state> , <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.entity$Investor.postalcode> , <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.entity$Investor.passwordSet> .
+
+_:node1774b13t7x5808 a atxa-core:link ;
+	atxa-core:model atxa-ann:namedRel ;
+	rdf:subject _:node1774b13t7x5840 ;
+	rdf:object _:node1774b13t7x5819 ;
+	atxa-core:width "2" ;
+	atxa-core:commentTxt "  " .
+
+_:node1774b13t7x5817 a atxa-core:link ;
+	atxa-core:model atxa-ann:namedRel ;
+	rdf:subject _:node1774b13t7x5840 ;
+	rdf:object _:node1774b13t7x5835 ;
+	atxa-core:width "2" ;
+	atxa-core:commentTxt "  " .
+
+_:node1774b13t7x5840 atxa-core:contains _:node1774b13t7x5841 .
+
+_:node1774b13t7x5841 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.entity$Investor.addressLineOne> ;
+	atxa-core:posX "63" ;
+	atxa-core:posY "-13" .
+
+_:node1774b13t7x5840 atxa-core:contains _:node1774b13t7x5842 .
+
+_:node1774b13t7x5842 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.entity$Investor.addressLineTwo> ;
+	atxa-core:posX "63" ;
+	atxa-core:posY "3" .
+
+_:node1774b13t7x5840 atxa-core:contains _:node1774b13t7x5843 .
+
+_:node1774b13t7x5843 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.entity$Investor.city> ;
+	atxa-core:posX "63" ;
+	atxa-core:posY "19" .
+
+_:node1774b13t7x5840 atxa-core:contains _:node1774b13t7x5844 .
+
+_:node1774b13t7x5844 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.entity$Investor.email> ;
+	atxa-core:posX "63" ;
+	atxa-core:posY "35" .
+
+_:node1774b13t7x5840 atxa-core:contains _:node1774b13t7x5845 .
+
+_:node1774b13t7x5845 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.entity$Investor.firstName> ;
+	atxa-core:posX "63" ;
+	atxa-core:posY "51" .
+
+_:node1774b13t7x5840 atxa-core:contains _:node1774b13t7x5846 .
+
+_:node1774b13t7x5846 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.entity$Investor.lastName> ;
+	atxa-core:posX "63" ;
+	atxa-core:posY "67" .
+
+_:node1774b13t7x5840 atxa-core:contains _:node1774b13t7x5847 .
+
+_:node1774b13t7x5847 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.entity$Investor.mobile> ;
+	atxa-core:posX "63" ;
+	atxa-core:posY "83" .
+
+_:node1774b13t7x5840 atxa-core:contains _:node1774b13t7x5848 .
+
+_:node1774b13t7x5848 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.entity$Investor.password> ;
+	atxa-core:posX "63" ;
+	atxa-core:posY "99" .
+
+_:node1774b13t7x5840 atxa-core:contains _:node1774b13t7x5849 .
+
+_:node1774b13t7x5849 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.entity$Investor.passwordSet> ;
+	atxa-core:posX "63" ;
+	atxa-core:posY "115" .
+
+_:node1774b13t7x5840 atxa-core:contains _:node1774b13t7x5850 .
+
+_:node1774b13t7x5850 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.entity$Investor.postalcode> ;
+	atxa-core:posX "63" ;
+	atxa-core:posY "131" .
+
+_:node1774b13t7x5840 atxa-core:contains _:node1774b13t7x5851 .
+
+_:node1774b13t7x5851 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.entity$Investor.state> ;
+	atxa-core:posX "63" ;
+	atxa-core:posY "147" .
+
+_:node1774b13t7x5840 atxa-core:contains _:node1774b13t7x5852 .
+
+_:node1774b13t7x5852 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.entity$Investor.userId> ;
+	atxa-core:posX "63" ;
+	atxa-core:posY "163" .
+
+_:node1774b13t7x5840 atxa-core:contains _:node1774b13t7x5826 .
+
+_:node1774b13t7x5826 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.entity$Investor.username> ;
+	atxa-core:posX "63" ;
+	atxa-core:posY "179" .
+

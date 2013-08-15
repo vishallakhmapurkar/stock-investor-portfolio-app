@@ -1,0 +1,286 @@
+@prefix atxa-rse-eclipse: <http://www.architexa.com/rdf/rse-eclipse#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix atxa-jdt-wkspc: <http://www.architexa.com/rdf/jdt-wkspc#> .
+@prefix atxa-core: <http://www.architexa.com/rdf/core#> .
+@prefix atxa: <http://www.architexa.com/rdf/> .
+@prefix atxa-jdt: <http://www.architexa.com/rdf/jdt#> .
+
+<http://www.architexa.com/rdf/rse-eclipse#src_slmain_slwebapp_slSession.relo> a atxa-core:reloFile .
+
+atxa:DetailNode atxa-core:detailLevel "0" .
+
+atxa-core:docRoot atxa-core:browseModel "com.architexa.diagrams.relo.jdt/com.architexa.diagrams.relo.jdt.browse.ClassStrucBrowseModel" ;
+	atxa-core:contains _:node1774b13t7x1971 .
+
+_:node1774b13t7x1971 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.controller> ;
+	atxa-core:posX "-22" ;
+	atxa-core:posY "42" .
+
+<http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.controller> atxa-core:contains <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.controller$LoginController> .
+
+_:node1774b13t7x1971 atxa-core:contains _:node1774b13t7x1972 .
+
+_:node1774b13t7x1972 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.controller$LoginController> ;
+	atxa-core:posX "-16" ;
+	atxa-core:posY "67" .
+
+<http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.controller$LoginController> atxa-core:contains <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.controller$LoginController.loginService> , <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.controller$LoginController.mailService> , <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.controller$LoginController.getpassword(String,)> , <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.controller$LoginController.loginCheck(Investor,HttpServletRequest,)> .
+
+_:node1774b13t7x1972 atxa-core:contains _:node1774b13t7x1974 .
+
+_:node1774b13t7x1974 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.controller$LoginController.getpassword(String,)> ;
+	atxa-core:posX "-15" ;
+	atxa-core:posY "121" .
+
+_:node1774b13t7x1363 a atxa-core:link ;
+	atxa-core:model atxa-jdt:calls ;
+	rdf:subject _:node1774b13t7x1974 ;
+	rdf:object _:node1774b13t7x1975 .
+
+_:node1774b13t7x1394 a atxa-core:link ;
+	atxa-core:model atxa-jdt:calls ;
+	rdf:subject _:node1774b13t7x1974 ;
+	rdf:object _:node1774b13t7x1976 .
+
+_:node1774b13t7x1972 atxa-core:contains _:node1774b13t7x1977 .
+
+_:node1774b13t7x1977 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.controller$LoginController.loginCheck(Investor,HttpServletRequest,)> ;
+	atxa-core:posX "-15" ;
+	atxa-core:posY "137" .
+
+_:node1774b13t7x1206 a atxa-core:link ;
+	atxa-core:model atxa-jdt:calls ;
+	rdf:subject _:node1774b13t7x1977 ;
+	rdf:object _:node1774b13t7x1978 .
+
+_:node1774b13t7x1972 atxa-core:contains _:node1774b13t7x1979 .
+
+_:node1774b13t7x1979 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.controller$LoginController.loginService> ;
+	atxa-core:posX "-15" ;
+	atxa-core:posY "89" .
+
+_:node1774b13t7x1972 atxa-core:contains _:node1774b13t7x1980 .
+
+_:node1774b13t7x1980 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.controller$LoginController.mailService> ;
+	atxa-core:posX "-15" ;
+	atxa-core:posY "105" .
+
+atxa-core:docRoot atxa-core:contains _:node1774b13t7x1982 .
+
+_:node1774b13t7x1982 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.service> ;
+	atxa-core:posX "488" ;
+	atxa-core:posY "-118" .
+
+<http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.service> atxa-core:contains <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.service$LoginServiceImpl> , <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.service$LoginService> .
+
+_:node1774b13t7x1982 atxa-core:contains _:node1774b13t7x1983 .
+
+_:node1774b13t7x1983 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.service$LoginService> ;
+	atxa-core:posX "494" ;
+	atxa-core:posY "-93" .
+
+<http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.service$LoginService> atxa-core:contains <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.service$LoginService.authenticateUser(String,String,)> , <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.service$LoginService.getPassword(String,)> .
+
+_:node1774b13t7x1983 atxa-core:contains _:node1774b13t7x1978 .
+
+_:node1774b13t7x1978 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.service$LoginService.authenticateUser(String,String,)> ;
+	atxa-core:posX "495" ;
+	atxa-core:posY "-71" .
+
+_:node1774b13t7x1983 atxa-core:contains _:node1774b13t7x1976 .
+
+_:node1774b13t7x1976 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.service$LoginService.getPassword(String,)> ;
+	atxa-core:posX "495" ;
+	atxa-core:posY "-55" .
+
+_:node1774b13t7x1982 atxa-core:contains _:node1774b13t7x1984 .
+
+_:node1774b13t7x1984 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.service$LoginServiceImpl> ;
+	atxa-core:posX "494" ;
+	atxa-core:posY "-30" .
+
+<http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.service$LoginServiceImpl> atxa-core:contains <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.service$LoginServiceImpl.authenticateUser(String,String,)> , <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.service$LoginServiceImpl.getPassword(String,)> .
+
+_:node1774b13t7x1984 atxa-core:contains _:node1774b13t7x1985 .
+
+_:node1774b13t7x1985 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.service$LoginServiceImpl.authenticateUser(String,String,)> ;
+	atxa-core:posX "495" ;
+	atxa-core:posY "-8" .
+
+_:node1774b13t7x1223 a atxa-core:link ;
+	atxa-core:model atxa-jdt:overrides ;
+	rdf:subject _:node1774b13t7x1985 ;
+	rdf:object _:node1774b13t7x1978 ;
+	atxa-core:bendpoint _:node1774b13t7x2767 .
+
+_:node1774b13t7x2767 atxa-core:bpLocation "697,-40" ;
+	atxa-core:bpIndex "0" .
+
+_:node1774b13t7x1235 a atxa-core:link ;
+	atxa-core:model atxa-jdt:calls ;
+	rdf:subject _:node1774b13t7x1985 ;
+	rdf:object _:node1774b13t7x1987 .
+
+_:node1774b13t7x1243 a atxa-core:link ;
+	atxa-core:model atxa-jdt:calls ;
+	rdf:subject _:node1774b13t7x1985 ;
+	rdf:object _:node1774b13t7x1988 .
+
+_:node1774b13t7x1984 atxa-core:contains _:node1774b13t7x1989 .
+
+_:node1774b13t7x1989 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.service$LoginServiceImpl.getPassword(String,)> ;
+	atxa-core:posX "495" ;
+	atxa-core:posY "8" .
+
+_:node1774b13t7x1425 a atxa-core:link ;
+	atxa-core:model atxa-jdt:overrides ;
+	rdf:subject _:node1774b13t7x1989 ;
+	rdf:object _:node1774b13t7x1976 ;
+	atxa-core:bendpoint _:node1774b13t7x2768 .
+
+_:node1774b13t7x2768 atxa-core:bpLocation "697,-24" ;
+	atxa-core:bpIndex "0" .
+
+_:node1774b13t7x1938 a atxa-core:link ;
+	atxa-core:model atxa-jdt:calls ;
+	rdf:subject _:node1774b13t7x1989 ;
+	rdf:object _:node1774b13t7x1991 .
+
+atxa-core:docRoot atxa-core:contains _:node1774b13t7x1992 .
+
+_:node1774b13t7x1992 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.repository> ;
+	atxa-core:posX "734" ;
+	atxa-core:posY "88" .
+
+<http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.repository> atxa-core:contains <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.repository$InvesterRepository> .
+
+_:node1774b13t7x1992 atxa-core:contains _:node1774b13t7x1993 .
+
+_:node1774b13t7x1993 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.repository$InvesterRepository> ;
+	atxa-core:posX "740" ;
+	atxa-core:posY "113" .
+
+<http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.repository$InvesterRepository> atxa-core:contains <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.repository$InvesterRepository.findByUsernameAndPassword(String,String,)> , <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.repository$InvesterRepository.getPassword(String,)> .
+
+_:node1774b13t7x1993 atxa-core:contains _:node1774b13t7x1987 .
+
+_:node1774b13t7x1987 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.repository$InvesterRepository.findByUsernameAndPassword(String,String,)> ;
+	atxa-core:posX "741" ;
+	atxa-core:posY "135" .
+
+_:node1774b13t7x1993 atxa-core:contains _:node1774b13t7x1991 .
+
+_:node1774b13t7x1991 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.repository$InvesterRepository.getPassword(String,)> ;
+	atxa-core:posX "741" ;
+	atxa-core:posY "151" .
+
+atxa-core:docRoot atxa-core:contains _:node1774b13t7x1994 .
+
+_:node1774b13t7x1994 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#org.apache.commons.validator> ;
+	atxa-core:posX "968" ;
+	atxa-core:posY "-35" ;
+	atxa-core:contains _:node1774b13t7x1995 .
+
+_:node1774b13t7x1995 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#org.apache.commons.validator$GenericValidator> ;
+	atxa-core:posX "974" ;
+	atxa-core:posY "-10" ;
+	atxa-core:contains _:node1774b13t7x1988 .
+
+_:node1774b13t7x1988 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#org.apache.commons.validator$GenericValidator.isBlankOrNull(String,)> ;
+	atxa-core:posX "975" ;
+	atxa-core:posY "12" .
+
+atxa-core:docRoot atxa-core:contains _:node1774b13t7x1996 .
+
+_:node1774b13t7x1996 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.mailutil> ;
+	atxa-core:posX "524" ;
+	atxa-core:posY "212" .
+
+<http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.mailutil> atxa-core:contains <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.mailutil$MailServiceImpl> , <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.mailutil$MailService> .
+
+_:node1774b13t7x1996 atxa-core:contains _:node1774b13t7x1997 .
+
+_:node1774b13t7x1997 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.mailutil$MailServiceImpl> ;
+	atxa-core:posX "530" ;
+	atxa-core:posY "316" .
+
+<http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.mailutil$MailServiceImpl> atxa-core:contains <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.mailutil$MailServiceImpl.sendMail(String,String,String,String,)> .
+
+_:node1774b13t7x1997 atxa-core:contains _:node1774b13t7x1998 .
+
+_:node1774b13t7x1998 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.mailutil$MailServiceImpl.sendMail(String,String,String,String,)> ;
+	atxa-core:posX "531" ;
+	atxa-core:posY "338" .
+
+_:node1774b13t7x1367 a atxa-core:link ;
+	atxa-core:model atxa-jdt:overrides ;
+	rdf:subject _:node1774b13t7x1998 ;
+	rdf:object _:node1774b13t7x1975 ;
+	atxa-core:bendpoint _:node1774b13t7x2769 .
+
+_:node1774b13t7x2769 atxa-core:bpLocation "658,322" ;
+	atxa-core:bpIndex "0" .
+
+_:node1774b13t7x1379 a atxa-core:link ;
+	atxa-core:model atxa-jdt:calls ;
+	rdf:subject _:node1774b13t7x1998 ;
+	rdf:object _:node1774b13t7x2000 .
+
+_:node1774b13t7x1996 atxa-core:contains _:node1774b13t7x2001 .
+
+_:node1774b13t7x2001 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.mailutil$MailService> ;
+	atxa-core:posX "530" ;
+	atxa-core:posY "237" .
+
+<http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.mailutil$MailService> atxa-core:contains <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.mailutil$MailService.sendMail(String,String,String,String,)> .
+
+_:node1774b13t7x2001 atxa-core:contains _:node1774b13t7x1975 .
+
+_:node1774b13t7x1975 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.mailutil$MailService.sendMail(String,String,String,String,)> ;
+	atxa-core:posX "531" ;
+	atxa-core:posY "259" .
+
+atxa-core:docRoot atxa-core:contains _:node1774b13t7x2002 .
+
+_:node1774b13t7x2002 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#org.springframework.mail> ;
+	atxa-core:posX "849" ;
+	atxa-core:posY "305" ;
+	atxa-core:contains _:node1774b13t7x2003 .
+
+_:node1774b13t7x2003 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#org.springframework.mail$SimpleMailMessage> ;
+	atxa-core:posX "855" ;
+	atxa-core:posY "330" ;
+	atxa-core:contains _:node1774b13t7x2000 .
+
+_:node1774b13t7x2000 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#org.springframework.mail$SimpleMailMessage.SimpleMailMessage()> ;
+	atxa-core:posX "856" ;
+	atxa-core:posY "352" .
+

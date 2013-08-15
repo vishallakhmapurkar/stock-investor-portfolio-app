@@ -1,0 +1,311 @@
+@prefix atxa-rse-eclipse: <http://www.architexa.com/rdf/rse-eclipse#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix atxa-jdt-wkspc: <http://www.architexa.com/rdf/jdt-wkspc#> .
+@prefix atxa-core: <http://www.architexa.com/rdf/core#> .
+@prefix atxa: <http://www.architexa.com/rdf/> .
+@prefix atxa-jdt: <http://www.architexa.com/rdf/jdt#> .
+
+<http://www.architexa.com/rdf/rse-eclipse#src_slmain_slwebapp_sldiagram_slLoggedInvesterSequenceDiagram.chrono> a atxa-core:chronoFile .
+
+atxa:DetailNode atxa-core:detailLevel "0" .
+
+<http://www.architexa.com/rdf/rse-eclipse#src_slmain_slwebapp_sldiagram_slLoggedInvesterSequenceDiagram.chrono> atxa-core:contains _:node1774b13t7x6040 .
+
+_:node1774b13t7x6040 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.controller$InvesterStockController> ;
+	atxa-jdt:index "0" ;
+	atxa-core:instanceName "" ;
+	atxa-core:contains _:node1774b13t7x6041 .
+
+_:node1774b13t7x6041 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.controller$InvesterStockController.addStock(Long,Date,double,Long,int,int,HttpServletRequest,)> ;
+	atxa-jdt:index "0" ;
+	atxa-core:contains _:node1774b13t7x6042 .
+
+_:node1774b13t7x6042 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.service$InverteerStocksService.addOrUpdateStock(InvesterStocksDetails,)> ;
+	atxa-jdt:index "0" .
+
+<http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.service$InverteerStocksService.addOrUpdateStock(InvesterStocksDetails,)> atxa-core:link _:node1774b13t7x6043 .
+
+_:node1774b13t7x6044 a atxa-core:link ;
+	atxa-core:model atxa-jdt:calls ;
+	rdf:subject _:node1774b13t7x6042 ;
+	rdf:object _:node1774b13t7x6043 ;
+	atxa-core:name "addOrUpdateStock(investerStocksDetails)" .
+
+_:node1774b13t7x6040 atxa-core:contains _:node1774b13t7x6045 .
+
+_:node1774b13t7x6045 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.controller$InvesterStockController.deleteStock(Long,)> ;
+	atxa-jdt:index "1" ;
+	atxa-core:contains _:node1774b13t7x6046 .
+
+_:node1774b13t7x6046 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.service$InverteerStocksService.deleteStock(Long,)> ;
+	atxa-jdt:index "0" .
+
+<http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.service$InverteerStocksService.deleteStock(Long,)> atxa-core:link _:node1774b13t7x6047 .
+
+_:node1774b13t7x6048 a atxa-core:link ;
+	atxa-core:model atxa-jdt:calls ;
+	rdf:subject _:node1774b13t7x6046 ;
+	rdf:object _:node1774b13t7x6047 ;
+	atxa-core:name "deleteStock(investerStockId)" .
+
+<http://www.architexa.com/rdf/rse-eclipse#src_slmain_slwebapp_sldiagram_slLoggedInvesterSequenceDiagram.chrono> atxa-core:contains _:node1774b13t7x6049 .
+
+_:node1774b13t7x6049 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.controller$StockController> ;
+	atxa-jdt:index "1" ;
+	atxa-core:instanceName "" ;
+	atxa-core:contains _:node1774b13t7x6050 .
+
+_:node1774b13t7x6050 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.controller$StockController.getStockByStockSymbolOrCompanyname(String,HttpServletRequest,)> ;
+	atxa-jdt:index "0" ;
+	atxa-core:contains _:node1774b13t7x6051 .
+
+_:node1774b13t7x6051 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.service$StockService.searchForStock(String,)> ;
+	atxa-jdt:index "0" .
+
+<http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.service$StockService.searchForStock(String,)> atxa-core:link _:node1774b13t7x6052 .
+
+_:node1774b13t7x6053 a atxa-core:link ;
+	atxa-core:model atxa-jdt:calls ;
+	rdf:subject _:node1774b13t7x6051 ;
+	rdf:object _:node1774b13t7x6052 ;
+	atxa-core:name "searchForStock(pattern)" .
+
+_:node1774b13t7x6049 atxa-core:contains _:node1774b13t7x6054 .
+
+_:node1774b13t7x6054 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.controller$StockController.getStocks(String,HttpServletRequest,)> ;
+	atxa-jdt:index "1" ;
+	atxa-core:contains _:node1774b13t7x6055 .
+
+_:node1774b13t7x6055 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.util$HttpUtil.getInvesterStockList(String,)> ;
+	atxa-jdt:index "0" .
+
+<http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.util$HttpUtil.getInvesterStockList(String,)> atxa-core:link _:node1774b13t7x6056 .
+
+_:node1774b13t7x6057 a atxa-core:link ;
+	atxa-core:model atxa-jdt:calls ;
+	rdf:subject _:node1774b13t7x6055 ;
+	rdf:object _:node1774b13t7x6056 ;
+	atxa-core:name "getInvesterStockList(conf.getWebServicePath() + invester.getUserId() + \"&time=\"+ time)" .
+
+_:node1774b13t7x6049 atxa-core:contains _:node1774b13t7x6058 .
+
+_:node1774b13t7x6058 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.controller$StockController.getLiveStock(Long,)> ;
+	atxa-jdt:index "2" ;
+	atxa-core:contains _:node1774b13t7x6059 .
+
+_:node1774b13t7x6059 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.service$StockService.getLiveStock(Long,)> ;
+	atxa-jdt:index "0" .
+
+<http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.service$StockService.getLiveStock(Long,)> atxa-core:link _:node1774b13t7x6060 .
+
+_:node1774b13t7x6061 a atxa-core:link ;
+	atxa-core:model atxa-jdt:calls ;
+	rdf:subject _:node1774b13t7x6059 ;
+	rdf:object _:node1774b13t7x6060 ;
+	atxa-core:name "getLiveStock(stockID)" .
+
+_:node1774b13t7x6049 atxa-core:contains _:node1774b13t7x6062 .
+
+_:node1774b13t7x6062 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.controller$StockController.getStockChart(Long,HttpServletRequest,)> ;
+	atxa-jdt:index "3" ;
+	atxa-core:contains _:node1774b13t7x6063 .
+
+_:node1774b13t7x6063 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.service$StockChartService.getYearlyStockDetails(Long,)> ;
+	atxa-jdt:index "0" .
+
+<http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.service$StockChartService.getYearlyStockDetails(Long,)> atxa-core:link _:node1774b13t7x6064 .
+
+_:node1774b13t7x6065 a atxa-core:link ;
+	atxa-core:model atxa-jdt:calls ;
+	rdf:subject _:node1774b13t7x6063 ;
+	rdf:object _:node1774b13t7x6064 ;
+	atxa-core:name "getYearlyStockDetails(stockID)" .
+
+<http://www.architexa.com/rdf/rse-eclipse#src_slmain_slwebapp_sldiagram_slLoggedInvesterSequenceDiagram.chrono> atxa-core:contains _:node1774b13t7x6066 .
+
+_:node1774b13t7x6066 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.service$StockChartServiceImpl> ;
+	atxa-jdt:index "2" ;
+	atxa-core:instanceName "" ;
+	atxa-core:contains _:node1774b13t7x6067 .
+
+_:node1774b13t7x6067 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.service$StockChartServiceImpl.getYearlyStockDetails(Long,)> ;
+	atxa-jdt:index "0" .
+
+_:node1774b13t7x6068 a atxa-core:link ;
+	atxa-core:model atxa-jdt:overrides ;
+	rdf:subject _:node1774b13t7x6067 ;
+	rdf:object _:node1774b13t7x6064 ;
+	atxa-core:name "overrides" .
+
+<http://www.architexa.com/rdf/rse-eclipse#src_slmain_slwebapp_sldiagram_slLoggedInvesterSequenceDiagram.chrono> atxa-core:contains _:node1774b13t7x6069 .
+
+_:node1774b13t7x6069 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.service$StockServiceImpl> ;
+	atxa-jdt:index "3" ;
+	atxa-core:instanceName "" ;
+	atxa-core:contains _:node1774b13t7x6070 .
+
+_:node1774b13t7x6070 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.service$StockServiceImpl.searchForStock(String,)> ;
+	atxa-jdt:index "0" .
+
+_:node1774b13t7x6071 a atxa-core:link ;
+	atxa-core:model atxa-jdt:overrides ;
+	rdf:subject _:node1774b13t7x6070 ;
+	rdf:object _:node1774b13t7x6052 ;
+	atxa-core:name "overrides" .
+
+_:node1774b13t7x6069 atxa-core:contains _:node1774b13t7x6072 .
+
+_:node1774b13t7x6072 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.service$StockServiceImpl.getLiveStock(Long,)> ;
+	atxa-jdt:index "1" .
+
+_:node1774b13t7x6073 a atxa-core:link ;
+	atxa-core:model atxa-jdt:overrides ;
+	rdf:subject _:node1774b13t7x6072 ;
+	rdf:object _:node1774b13t7x6060 ;
+	atxa-core:name "overrides" .
+
+<http://www.architexa.com/rdf/rse-eclipse#src_slmain_slwebapp_sldiagram_slLoggedInvesterSequenceDiagram.chrono> atxa-core:contains _:node1774b13t7x6074 .
+
+_:node1774b13t7x6074 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.service$InverteerStocksServiceImpl> ;
+	atxa-jdt:index "4" ;
+	atxa-core:instanceName "" ;
+	atxa-core:contains _:node1774b13t7x6075 .
+
+_:node1774b13t7x6075 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.service$InverteerStocksServiceImpl.addOrUpdateStock(InvesterStocksDetails,)> ;
+	atxa-jdt:index "0" .
+
+_:node1774b13t7x6076 a atxa-core:link ;
+	atxa-core:model atxa-jdt:overrides ;
+	rdf:subject _:node1774b13t7x6075 ;
+	rdf:object _:node1774b13t7x6043 ;
+	atxa-core:name "overrides" .
+
+_:node1774b13t7x6074 atxa-core:contains _:node1774b13t7x6077 .
+
+_:node1774b13t7x6077 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.service$InverteerStocksServiceImpl.deleteStock(Long,)> ;
+	atxa-jdt:index "1" .
+
+_:node1774b13t7x6078 a atxa-core:link ;
+	atxa-core:model atxa-jdt:overrides ;
+	rdf:subject _:node1774b13t7x6077 ;
+	rdf:object _:node1774b13t7x6047 ;
+	atxa-core:name "overrides" .
+
+<http://www.architexa.com/rdf/rse-eclipse#src_slmain_slwebapp_sldiagram_slLoggedInvesterSequenceDiagram.chrono> atxa-core:contains _:node1774b13t7x6037 .
+
+_:node1774b13t7x6037 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.service$InverteerStocksService> ;
+	atxa-jdt:index "5" ;
+	atxa-core:instanceName "inverteerStocksService" ;
+	atxa-core:contains _:node1774b13t7x6043 .
+
+_:node1774b13t7x6043 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.service$InverteerStocksService.addOrUpdateStock(InvesterStocksDetails,)> ;
+	atxa-jdt:index "0" .
+
+_:node1774b13t7x6079 a atxa-core:link ;
+	atxa-core:model atxa-jdt:returns ;
+	rdf:subject _:node1774b13t7x6043 ;
+	rdf:object _:node1774b13t7x6042 ;
+	atxa-core:name "InvesterStocksDetails" .
+
+_:node1774b13t7x6037 atxa-core:contains _:node1774b13t7x6047 .
+
+_:node1774b13t7x6047 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.service$InverteerStocksService.deleteStock(Long,)> ;
+	atxa-jdt:index "1" .
+
+_:node1774b13t7x6080 a atxa-core:link ;
+	atxa-core:model atxa-jdt:returns ;
+	rdf:subject _:node1774b13t7x6047 ;
+	rdf:object _:node1774b13t7x6046 ;
+	atxa-core:name "boolean" .
+
+<http://www.architexa.com/rdf/rse-eclipse#src_slmain_slwebapp_sldiagram_slLoggedInvesterSequenceDiagram.chrono> atxa-core:contains _:node1774b13t7x6038 .
+
+_:node1774b13t7x6038 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.service$StockService> ;
+	atxa-jdt:index "6" ;
+	atxa-core:instanceName "stockServiceImpl" ;
+	atxa-core:contains _:node1774b13t7x6052 .
+
+_:node1774b13t7x6052 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.service$StockService.searchForStock(String,)> ;
+	atxa-jdt:index "0" .
+
+_:node1774b13t7x6081 a atxa-core:link ;
+	atxa-core:model atxa-jdt:returns ;
+	rdf:subject _:node1774b13t7x6052 ;
+	rdf:object _:node1774b13t7x6051 ;
+	atxa-core:name "List<Stock>" .
+
+_:node1774b13t7x6038 atxa-core:contains _:node1774b13t7x6060 .
+
+_:node1774b13t7x6060 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.service$StockService.getLiveStock(Long,)> ;
+	atxa-jdt:index "1" .
+
+_:node1774b13t7x6082 a atxa-core:link ;
+	atxa-core:model atxa-jdt:returns ;
+	rdf:subject _:node1774b13t7x6060 ;
+	rdf:object _:node1774b13t7x6059 ;
+	atxa-core:name "Stock" .
+
+<http://www.architexa.com/rdf/rse-eclipse#src_slmain_slwebapp_sldiagram_slLoggedInvesterSequenceDiagram.chrono> atxa-core:contains _:node1774b13t7x6083 .
+
+_:node1774b13t7x6083 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.util$HttpUtil> ;
+	atxa-jdt:index "7" ;
+	atxa-core:instanceName "" ;
+	atxa-core:contains _:node1774b13t7x6056 .
+
+_:node1774b13t7x6056 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.util$HttpUtil.getInvesterStockList(String,)> ;
+	atxa-jdt:index "0" .
+
+_:node1774b13t7x6084 a atxa-core:link ;
+	atxa-core:model atxa-jdt:returns ;
+	rdf:subject _:node1774b13t7x6056 ;
+	rdf:object _:node1774b13t7x6055 ;
+	atxa-core:name "List<InvesterStock>" .
+
+<http://www.architexa.com/rdf/rse-eclipse#src_slmain_slwebapp_sldiagram_slLoggedInvesterSequenceDiagram.chrono> atxa-core:contains _:node1774b13t7x6039 .
+
+_:node1774b13t7x6039 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.service$StockChartService> ;
+	atxa-jdt:index "8" ;
+	atxa-core:instanceName "stockChartService" ;
+	atxa-core:contains _:node1774b13t7x6064 .
+
+_:node1774b13t7x6064 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#com.impetus.stockapp.service$StockChartService.getYearlyStockDetails(Long,)> ;
+	atxa-jdt:index "0" .
+
+_:node1774b13t7x6085 a atxa-core:link ;
+	atxa-core:model atxa-jdt:returns ;
+	rdf:subject _:node1774b13t7x6064 ;
+	rdf:object _:node1774b13t7x6063 ;
+	atxa-core:name "List<StockYearDetail>" .
+
